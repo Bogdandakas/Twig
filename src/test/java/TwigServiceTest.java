@@ -35,7 +35,8 @@ public class TwigServiceTest {
 
 //            tree.getTwigs().get(1).getTwigs().get(1).getTwigs().get(0).getTwigs().add(new Twig());
 
-            assertEquals(4, service.getMaxLevel(tree,0,0));
+            assertEquals(4, service.getMaxLevel(tree));
 //            assertEquals(5, service.getMaxLevel(tree,0,0));
+
     }
 }

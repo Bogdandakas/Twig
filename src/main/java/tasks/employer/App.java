@@ -21,9 +21,10 @@ public class App {
         TwigService service = new TwigService();
 
         int result = service.getMaxLevel(createTree());
+        logger.log(Level.INFO, "The deepest level of tree(created manually) is: " + result);
 
-        logger.log(Level.INFO, "The deepest level of tree is: " + result);
-
+        int result2 = service.getMaxLevel(service.createTreeRandom());
+        logger.log(Level.INFO, "The deepest level of tree(created with random) is: " + result2);
     }
 
     private static Twig createTree() {
@@ -47,5 +48,7 @@ public class App {
 
         return tree;
     }
+
+
 
 }
