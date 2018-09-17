@@ -4,7 +4,11 @@ import tasks.employer.beans.Twig;
 
 public class TwigService {
 
-    public int getMaxLevel(Twig tree, int levelCounter, int level) {
+    public int getMaxLevel(Twig tree){
+        return getMaxLevel(tree,0,0);
+    }
+
+    private int getMaxLevel(Twig tree, int levelCounter, int level) {
 
         levelCounter++;
 

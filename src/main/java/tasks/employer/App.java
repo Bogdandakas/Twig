@@ -20,7 +20,7 @@ public class App {
 
         TwigService service = new TwigService();
 
-        int result = service.getMaxLevel(createTree(), 0, 0);
+        int result = service.getMaxLevel(createTree());
 
         logger.log(Level.INFO, "The deepest level of tree is: " + result);
 
