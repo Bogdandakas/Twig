@@ -7,8 +7,7 @@ public class Twig {
 
     private List<Twig> twigs = new ArrayList();
 
-    public Twig() {
-    }
+    public Twig() {}
 
     public List<Twig> getTwigs() {
         return twigs;

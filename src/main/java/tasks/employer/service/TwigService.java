@@ -2,17 +2,15 @@ package tasks.employer.service;
 
 import tasks.employer.beans.Twig;
 
-import java.util.Random;
+ import java.util.Random;
 
 public class TwigService {
 
-    public static final int NUMBER = 3;
+    private static final int NUMBER = 3;
 
     public int getMaxLevel(Twig tree) {
-        if (null != tree) {
-            return getMaxLevel(tree, 0, 0);
-        }
-        return 0;
+
+        return null != tree ? getMaxLevel(tree, 0, 0) : 0;
     }
 
     public Twig createTreeRandom() {
@@ -37,5 +35,4 @@ public class TwigService {
         }
         return Math.max(level, levelCounter);
     }
-
 }
