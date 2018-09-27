@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import tasks.employer.beans.Twig;
 import tasks.employer.service.TwigService;
+import tasks.employer.service.TwigServiceImpl;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -12,7 +13,7 @@ public class TwigServiceTest {
 
         @Before
         public void init() {
-            service = new TwigService();
+            service = new TwigServiceImpl();
         }
 
         @Test
